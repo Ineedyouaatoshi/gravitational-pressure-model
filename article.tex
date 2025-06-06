@@ -1,16 +1,14 @@
+
 \documentclass[12pt,a4paper]{article}
 \usepackage{amsmath}
 \usepackage{hyperref}
 \usepackage{geometry}
 \geometry{margin=1in}
-
 \title{A New Gravitational Model Incorporating Pressure Effects: Numerical Analysis Across Celestial Bodies}
-\author{Mohammadreza Eskandari Nasab Siahkohi \\
-\textit{In collaboration with ChatGPT (AI Assistant)}}
+\author{Mohammadreza Eskandari Nasab Siahkohi}
 \date{}
 
 \begin{document}
-
 \maketitle
 
 \begin{abstract}
@@ -23,109 +21,76 @@ Gravity is the dominant force shaping the structure and evolution of celestial b
 \section{Theoretical Framework and Methodology}
 \subsection{Model Assumptions}
 \begin{itemize}
-    \item Celestial bodies are approximated as uniform spheres.
-    \item Internal pressures considered include hydrostatic, rotational, and radiative components.
-    \item Magnetic fields and nonlinear dynamic phenomena are excluded from this first-order model.
+\item Celestial bodies are approximated as uniform spheres.
+\item Internal pressures considered include hydrostatic, rotational, and radiative components.
+\item Magnetic fields and nonlinear dynamic phenomena are excluded from this first-order model.
 \end{itemize}
 
 \subsection{Model Equations}
 The classical surface gravity is given by:
-\[
-g = \frac{GM}{R^{2}}
-\]
-
+\[ g = \frac{GM}{R^{2}} \]
 The pressure correction term is:
-\[
-\Delta g = \frac{1}{\rho R} \sum_i P_i
-\]
-
+\[ \Delta g = \frac{1}{\rho R} \sum_i P_i \]
 Thus, the modified gravitational acceleration is:
-\[
-g_{\text{model}} = g - \Delta g
-\]
-
-Where: \\
-$G$ = gravitational constant, \\
-$M$ = total mass, \\
-$R$ = radius, \\
-$\rho$ = average density, \\
+\[ g_{\text{model}} = g - \Delta g \]
+Where:\\
+$G$ = gravitational constant,\\
+$M$ = total mass,\\
+$R$ = radius,\\
+$\rho$ = average density,\\
 $P_i$ = internal pressure components.
 
 \section{Numerical Calculations and Comparison}
 \subsection{Earth}
-\[
-\sum P_i = 1.202 \times 10^{9} \text{ Pa}, \quad \rho = 5514 \text{ kg/m}^3, \quad R = 6.371 \times 10^{6} \text{ m}
-\]
-\[
-\Delta g = 0.0342 \text{ m/s}^2, \quad g_{\text{model}} = 9.7858 \text{ m/s}^2
-\]
+\[ \sum P_i = 1.202 \times 10^{9} \text{ Pa}, \quad \rho = 5514 \text{ kg/m}^3, \quad R = 6.371 \times 10^{6} \text{ m} \]
+\[ \Delta g = 0.0342 \text{ m/s}^2, \quad g_{\text{model}} = 9.7858 \text{ m/s}^2 \]
 
 \subsection{Sun}
-\[
-\sum P_i = 2.5 \times 10^{13} \text{ Pa}, \quad \rho = 1408 \text{ kg/m}^3, \quad R = 6.957 \times 10^{8} \text{ m}
-\]
-\[
-\Delta g \approx 25.54 \text{ m/s}^2, \quad g_{\text{model}} = 248.46 \text{ m/s}^2
-\]
+\[ \sum P_i = 2.5 \times 10^{13} \text{ Pa}, \quad \rho = 1408 \text{ kg/m}^3, \quad R = 6.957 \times 10^{8} \text{ m} \]
+\[ \Delta g \approx 25.54 \text{ m/s}^2, \quad g_{\text{model}} = 248.46 \text{ m/s}^2 \]
 
 \subsection{Mars}
-\[
-\sum P_i = 3.505 \times 10^{8} \text{ Pa}, \quad \rho = 3933 \text{ kg/m}^3, \quad R = 3.39 \times 10^{6} \text{ m}
-\]
-\[
-\Delta g = 0.0263 \text{ m/s}^2, \quad g_{\text{model}} = 3.6837 \text{ m/s}^2
-\]
+\[ \sum P_i = 3.505 \times 10^{8} \text{ Pa}, \quad \rho = 3933 \text{ kg/m}^3, \quad R = 3.39 \times 10^{6} \text{ m} \]
+\[ \Delta g = 0.0263 \text{ m/s}^2, \quad g_{\text{model}} = 3.6837 \text{ m/s}^2 \]
 
 \subsection{Jupiter}
-\[
-\sum P_i = 7.531 \times 10^{10} \text{ Pa}, \quad \rho = 1326 \text{ kg/m}^3, \quad R = 6.991 \times 10^{7} \text{ m}
-\]
-\[
-\Delta g = 0.812 \text{ m/s}^2, \quad g_{\text{model}} = 23.978 \text{ m/s}^2
-\]
+\[ \sum P_i = 7.531 \times 10^{10} \text{ Pa}, \quad \rho = 1326 \text{ kg/m}^3, \quad R = 6.991 \times 10^{7} \text{ m} \]
+\[ \Delta g = 0.812 \text{ m/s}^2, \quad g_{\text{model}} = 23.978 \text{ m/s}^2 \]
 
 \subsection{Neutron Star}
-\[
-\sum P_i = 1.055 \times 10^{18} \text{ Pa}, \quad \rho = 7.0 \times 10^{17} \text{ kg/m}^3, \quad R = 1.2 \times 10^{4} \text{ m}
-\]
-\[
-\Delta g = 1.25 \times 10^{-4} \text{ m/s}^2, \quad g_{\text{standard}} \approx 9.27 \times 10^{11} \text{ m/s}^2
-\]
+\[ \sum P_i = 1.055 \times 10^{18} \text{ Pa}, \quad \rho = 7.0 \times 10^{17} \text{ kg/m}^3, \quad R = 1.2 \times 10^{4} \text{ m} \]
+\[ \Delta g = 1.25 \times 10^{-4} \text{ m/s}^2, \quad g_{\text{standard}} \approx 9.27 \times 10^{11} \text{ m/s}^2 \]
 
 \subsection{Galaxy Scale}
-\[
-P = 1.0 \times 10^{-11} \text{ Pa}, \quad \rho = 10^{-21} \text{ kg/m}^3, \quad R = 5 \times 10^{20} \text{ m}
-\]
-\[
-\Delta g = 2.0 \times 10^{-10} \text{ m/s}^2, \quad g_{\text{standard}} \approx 2.67 \times 10^{-10} \text{ m/s}^2
-\]
+\[ P = 1.0 \times 10^{-11} \text{ Pa}, \quad \rho = 10^{-21} \text{ kg/m}^3, \quad R = 5 \times 10^{20} \text{ m} \]
+\[ \Delta g = 2.0 \times 10^{-10} \text{ m/s}^2, \quad g_{\text{standard}} \approx 2.67 \times 10^{-10} \text{ m/s}^2 \]
 
 \section{Discussion and Conclusion}
 The pressure-inclusive gravitational model reveals notable corrections in gravitational acceleration across different celestial scales. In extremely dense objects such as neutron stars, pressure corrections are negligible, while in planets and stars they are significant. On a galactic scale, the correction magnitude is comparable to the gravitational acceleration itself, suggesting a potential connection with observed dark matter effects. This model offers a promising tool for deeper astrophysical and gravitational studies, especially for phenomena unexplained by classical Newtonian or relativistic frameworks.
 
 \section{Future Work}
 \begin{itemize}
-    \item Integrating strong magnetic fields and electromagnetic radiation effects.
-    \item Investigating implications for planetary and galactic evolution.
-    \item Applying the model to multi-body simulations and observational datasets.
-    \item Expanding to general relativistic corrections and energy-momentum tensor formulations.
+\item Integrating strong magnetic fields and electromagnetic radiation effects.
+\item Investigating implications for planetary and galactic evolution.
+\item Applying the model to multi-body simulations and observational datasets.
+\item Expanding to general relativistic corrections and energy-momentum tensor formulations.
 \end{itemize}
 
 \section{Acknowledgments}
-The authors gratefully acknowledge the analytical and conceptual contributions of \textbf{ChatGPT}, which assisted with the theoretical formulation, equation verification, and numerical analysis of the model. The collaboration between human insight and AI computing power has enabled the development of this innovative gravitational framework.
+The author gratefully acknowledges the analytical and conceptual contributions of \textbf{ChatGPT}, which assisted with theoretical formulation, verification, and numerical analysis in the development of this paper.
 
 \section{References}
 \begin{enumerate}
-    \item NASA Planetary Fact Sheets – \url{https://nssdc.gsfc.nasa.gov/planetary/planetfact.html}
-    \item European Space Agency (ESA), Solar System Data – \url{https://www.esa.int/Science_Exploration/Space_Science}
-    \item Carroll, B. W., \& Ostlie, D. A. (2017). \textit{An Introduction to Modern Astrophysics}. Cambridge University Press.
-    \item Misner, C. W., Thorne, K. S., \& Wheeler, J. A. (1973). \textit{Gravitation}. W.H. Freeman and Company.
-    \item Shapiro, S. L., \& Teukolsky, S. A. (1983). \textit{Black Holes, White Dwarfs, and Neutron Stars: The Physics of Compact Objects}. Wiley-VCH.
-    \item Planck Collaboration (2020). \textit{Planck 2018 results. VI. Cosmological parameters}. \textit{Astronomy \& Astrophysics}, 641, A6.
-    \item Peebles, P. J. E. (2020). \textit{Dark Matter and the Structure of the Universe}. \textit{Nature Astronomy}, 4, 725–729.
-    \item Binney, J., \& Tremaine, S. (2008). \textit{Galactic Dynamics} (2nd ed.). Princeton University Press.
-    \item Open Exoplanet Catalog, Average Densities and Pressures of Celestial Bodies – \url{https://www.openexoplanetcatalogue.com}
-    \item Freedman, R. A., \& Kaufmann, W. J. (2015). \textit{Universe}. W.H. Freeman.
+\item NASA Planetary Fact Sheets – \url{https://nssdc.gsfc.nasa.gov/planetary/planetfact.html}
+\item European Space Agency (ESA), Solar System Data – \url{https://www.esa.int/Science_Exploration/Space_Science}
+\item Carroll, B. W., \& Ostlie, D. A. (2017). \textit{An Introduction to Modern Astrophysics}. Cambridge University Press.
+\item Misner, C. W., Thorne, K. S., \& Wheeler, J. A. (1973). \textit{Gravitation}. W.H. Freeman and Company.
+\item Shapiro, S. L., \& Teukolsky, S. A. (1983). \textit{Black Holes, White Dwarfs, and Neutron Stars: The Physics of Compact Objects}. Wiley-VCH.
+\item Planck Collaboration (2020). \textit{Planck 2018 results. VI. Cosmological parameters}. \textit{Astronomy \& Astrophysics}, 641, A6.
+\item Peebles, P. J. E. (2020). \textit{Dark Matter and the Structure of the Universe}. \textit{Nature Astronomy}, 4, 725–729.
+\item Binney, J., \& Tremaine, S. (2008). \textit{Galactic Dynamics} (2nd ed.). Princeton University Press.
+\item Open Exoplanet Catalog – \url{https://www.openexoplanetcatalogue.com}
+\item Freedman, R. A., \& Kaufmann, W. J. (2015). \textit{Universe}. W.H. Freeman.
 \end{enumerate}
 
 \end{document}
